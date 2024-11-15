@@ -6,7 +6,7 @@ import pic from "@/app/src/IMG_0751.jpg"
 const Header = () => {
   return (
     <>
-        <div className='relative z-0 w-full'>
+        <div className='relative z-0 w-full' id='main-menu'>
             <div className='absolute bottom-[20%] py-4 px-5 sm:p-6 rounded-e-3xl md:m-auto backdrop-blur-md bg-black/15 w-[45%] shadow-xl'>
               <div className='relative place-self-center text-[0.5rem] sm:text-[0.75rem] md:text-lg lg:px-1 2xl:py-10 text-gray-100 '>
                 <h1 className='text-center mb-4 2xl:mb-8 font-extrabold text-[0.85rem] sm:text-2xl md:text-4xl '>کلینک دندانپزشکی دریس دنتال</h1>

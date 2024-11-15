@@ -8,15 +8,15 @@ import logo from '@/app/src/logo.png'
 import Link from 'next/link'
 
 
-const scrollToHash = function (element_id: string) {
-  const element = document.getElementById(element_id)
-  element?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-}
-const sideBarToggler = document.querySelector(".default")
-const sideBar = document.querySelector(".mini")
-sideBarToggler?.addEventListener("click", () => {
-  sideBar?.classList.toggle("mini")
-})
+// const scrollToHash = function (element_id: string) {
+//   const element = document.getElementById(element_id)
+//   element?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+// }
+// const sideBarToggler = document.querySelector(".default")
+// const sideBar = document.querySelector(".mini")
+// sideBarToggler?.addEventListener("click", () => {
+//   sideBar?.classList.toggle("mini")
+// })
 
 export default function NavBar(){
 
@@ -24,9 +24,9 @@ export default function NavBar(){
   const [open, setOpen] = useState<boolean>(false) 
     return (
     <>
-    <div className='fixed backdrop-blur-3xl bg-black/15 text-slate-900 rounded-b-lg w-full z-10' id='main-menu'>
-      <div className='relative over flex px-6 md:px-14 py-1'>
-        <div className='default sm:hidden flex w-full items-center'>
+    <div className='fixed backdrop-blur-3xl bg-black/15 text-slate-900 rounded-b-lg w-full z-10'>
+      <div className='relative flex px-6 md:px-14 py-1'>
+        <div className=' sm:hidden flex w-full items-center'>
           <Sheet open={open} onOpenChange={setOpen}>
             
             <SheetTrigger><Menu/></SheetTrigger>
@@ -34,16 +34,20 @@ export default function NavBar(){
               <SheetHeader className=' mini pt-16 space-y-6 font-bold text-zinc-900'>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  scrollToHash("main-menu")}}>صفحه اصلی</SheetDescription>
+                  // scrollToHash("main-menu")
+                  }}>صفحه اصلی</SheetDescription>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  scrollToHash("introduce")}}> درباره ما</SheetDescription>
+                  // scrollToHash("introduce")
+                  }}> درباره ما</SheetDescription>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  scrollToHash("services")}}>خدمات</SheetDescription>
+                  // scrollToHash("services")
+                  }}>خدمات</SheetDescription>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  scrollToHash("about-us")}}>تماس با ما</SheetDescription>
+                  // scrollToHash("about-us")
+                  }}>تماس با ما</SheetDescription>
               </SheetHeader>
             </SheetContent>
           </Sheet>
@@ -55,21 +59,21 @@ export default function NavBar(){
                 صفحه اصلی
               </h1>
           </Link>
-            <div onClick={() => {scrollToHash("introduce")}}>
+            <Link href="#introduce" legacyBehavior passHref>
               <h1 className='text-[0.58rem] md:text-xl 2xl:text-xl font-extrabold inline-flex items-center hover:cursor-pointer rounded-md mx-2 sm:px-3 w-max text-sm '>
               درباره ما
               </h1>
-            </div>
-            <div onClick={() => {scrollToHash("services")}}>
+            </Link>
+            <Link href="#services" legacyBehavior passHref>
               <h1 className='text-[0.58rem] md:text-xl 2xl:text-xl font-extrabold inline-flex items-center hover:cursor-pointer rounded-md mx-2 sm:px-3 w-max text-sm '>
                 خدمات
               </h1>
-            </div>
-            <div onClick={() => {scrollToHash("about-us")}}>
+            </Link>
+            <Link href="#about-us" legacyBehavior passHref>
               <h1 className='text-[0.58rem] md:text-xl 2xl:text-xl font-extrabold inline-flex items-center hover:cursor-pointer rounded-md mx-2 sm:px-3 w-max text-sm '>
                 تماس با ما
               </h1>
-            </div>
+            </Link>
           </nav>
           <div className='w-max left-0'>
           <div>

@@ -8,9 +8,9 @@ import bliching from '@/app/src/blichh.jpg'
 
 const Services = () => {
   return (
-    <div>
+    <div id='services'>
       
-      <div className='my-20 w-[65%] lg:w-[90%] m-auto' id='services'>
+      <div className='my-20 w-[65%] lg:w-[90%] m-auto' >
         <div className='p-1 xs:p-16 lg:p-5 lg:flex'>
             <div className='lg:flex w-full text-base lg:text-sm rounded-lg shadow-2xl lg:mx-3 mb-9 lg:mb-0'
             data-aos="zoom-in-right"

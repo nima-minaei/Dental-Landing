@@ -9,7 +9,8 @@ export function CarouselSection() {
 
   return (
     <>
-      <div className="flex justify-center" id='introduce'>
+    <div id='introduce'>
+      <div className="flex justify-center">
         <div className="sm:mx-11 py-10 px-5 w-[80vh] md:w-[150vh] flex justify-center">
               <div className="bg-zinc-50 rounded-xl md:flex shadow-2xl "  
               data-aos="fade-up" 
@@ -51,6 +52,7 @@ export function CarouselSection() {
         </div> 
 
       </div>
+    </div>
     
     </>
   )
