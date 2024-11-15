@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Sheet ,SheetTrigger, SheetContent, SheetHeader, SheetDescription,} from '@/components/ui/sheet'
 import { Menu } from 'lucide-react'
 import logo from '@/app/src/logo.png'
+import Link from 'next/link'
 
 
 const scrollToHash = function (element_id: string) {
@@ -31,25 +32,32 @@ export default function NavBar(){
             <SheetTrigger><Menu/></SheetTrigger>
             <SheetContent className='w-full bg-[url(../app/src/pattern-randomized.svg)] text-slate-900'>
               <SheetHeader className=' mini pt-16 space-y-6 font-bold text-zinc-900'>
-                <SheetDescription>صفحه اصلی</SheetDescription>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  scrollToHash("project")}}>پروژه ها</SheetDescription>
+                  scrollToHash("main-menu")}}>صفحه اصلی</SheetDescription>
+                <SheetDescription onClick={() => {
+                  setOpen(false)
+                  scrollToHash("introduce")}}> درباره ما</SheetDescription>
                 <SheetDescription onClick={() => {
                   setOpen(false)
                   scrollToHash("services")}}>خدمات</SheetDescription>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  scrollToHash("about-us")}}>درباره ما</SheetDescription>
+                  scrollToHash("about-us")}}>تماس با ما</SheetDescription>
               </SheetHeader>
             </SheetContent>
           </Sheet>
         </div>
 
-          <div className='hidden sm:flex w-full items-center '>
-            <div onClick={() => {scrollToHash("main-menu")}}>
+          <nav className='hidden sm:flex w-full items-center '>
+          <Link href="#main-menu" legacyBehavior passHref>
               <h1 className='text-[0.58rem] md:text-xl 2xl:text-xl font-extrabold inline-flex items-center hover:cursor-pointer rounded-md mx-2 sm:px-3 w-max text-sm '>
                 صفحه اصلی
+              </h1>
+          </Link>
+            <div onClick={() => {scrollToHash("introduce")}}>
+              <h1 className='text-[0.58rem] md:text-xl 2xl:text-xl font-extrabold inline-flex items-center hover:cursor-pointer rounded-md mx-2 sm:px-3 w-max text-sm '>
+              درباره ما
               </h1>
             </div>
             <div onClick={() => {scrollToHash("services")}}>
@@ -59,10 +67,10 @@ export default function NavBar(){
             </div>
             <div onClick={() => {scrollToHash("about-us")}}>
               <h1 className='text-[0.58rem] md:text-xl 2xl:text-xl font-extrabold inline-flex items-center hover:cursor-pointer rounded-md mx-2 sm:px-3 w-max text-sm '>
-                درباره ما
+                تماس با ما
               </h1>
             </div>
-          </div>
+          </nav>
           <div className='w-max left-0'>
           <div>
               <Image src={logo} alt='logo' className='float-left object-cover w-[6vh] md:w-[9vh] items-center'/>

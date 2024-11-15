@@ -1,7 +1,4 @@
-import Image from 'next/image'
 import React from 'react'
-import pic from '@/app/src/IMG_0655.jpg'
-import pic1 from '@/app/src/IMG_0656.jpg'
 
 const ChildPart = () => {
   return (

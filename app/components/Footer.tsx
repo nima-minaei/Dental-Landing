@@ -16,7 +16,7 @@ import map from '@/app/src/map.png'
 const Footer = () => {
   return (
     <>
-            <div className='bg-[url(../app/src/wavey-fingerprintr.svg)] bg-fixed w-full p-10 text-slate-200 rounded-lg pb-16' id='about-us' >
+            <footer className='bg-[url(../app/src/wavey-fingerprintr.svg)] bg-fixed w-full p-10 text-slate-200 rounded-lg pb-16' id='about-us' >
                 <div className='border-b-2 border-slate-200 pb-10 mb-10'>
                     <div className='text-3xl flex cursor-pointer float-left '>
                         <Link href="#main-menu" legacyBehavior passHref>
@@ -28,7 +28,7 @@ const Footer = () => {
 
                 <div className='text-[0.8rem] md:text-lg 2xl:text-xl font-semibold md:flex flex-wrap lg:flex-nowrap items-start'>
                     <div className=" w-full space-y-5 max-w-sm text-xs md:text-sm mb-10">
-                    <h5 className='border-b-2 border-slate-200 py-2 inline-block text-[1.3rem] md:text-2xl 2xl:text-3xl'>درباره ما</h5>
+                    <h5 className='border-b-2 border-slate-200 py-2 inline-block text-[1.3rem] md:text-2xl 2xl:text-3xl'>ارتباط با ما</h5>
                         <div className=' flex'>
                         <MapPin />
                         <span className='pr-3'>مشهد - خیابان فلسطین 19 - پلاک 76 - طبفه دوم</span>
@@ -86,7 +86,7 @@ const Footer = () => {
 
                 </div>
 
-            </div>
+            </footer>
 
             <div className='flex flex-wrap text-[0.8rem] 2xl:text-base sm:justify-between justify-center py-2 sm:px-5 text-slate-700'>
                 <p>© کلیه حقوق متعلق به گروه ما می باشد.</p>
