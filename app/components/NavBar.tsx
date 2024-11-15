@@ -24,29 +24,24 @@ export default function NavBar(){
   const [open, setOpen] = useState<boolean>(false) 
     return (
     <>
-    <div className='fixed backdrop-blur-3xl bg-black/15 text-slate-900 rounded-b-lg w-full z-10'>
+    <div className='sticky top-0 backdrop-blur-3xl bg-black/15 text-slate-900 rounded-b-lg w-full z-10'>
       <div className='relative flex px-6 md:px-14 py-1'>
         <div className=' sm:hidden flex w-full items-center'>
-          <Sheet open={open} onOpenChange={setOpen}>
-            
+          <Sheet open={open} onOpenChange={setOpen} data-aos="fade-left" data-aos-duration="3000">
             <SheetTrigger><Menu/></SheetTrigger>
             <SheetContent className='w-full bg-[url(../app/src/pattern-randomized.svg)] text-slate-900'>
               <SheetHeader className=' mini pt-16 space-y-6 font-bold text-zinc-900'>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  // scrollToHash("main-menu")
                   }}>صفحه اصلی</SheetDescription>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  // scrollToHash("introduce")
                   }}> درباره ما</SheetDescription>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  // scrollToHash("services")
                   }}>خدمات</SheetDescription>
                 <SheetDescription onClick={() => {
                   setOpen(false)
-                  // scrollToHash("about-us")
                   }}>تماس با ما</SheetDescription>
               </SheetHeader>
             </SheetContent>

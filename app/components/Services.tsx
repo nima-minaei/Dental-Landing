@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <div id='services'>
       
-      <div className='my-20 w-[65%] lg:w-[90%] m-auto' >
+      <div className='my-24 w-[80%] sm:w-[70%] lg:w-[90%] m-auto' >
         <div className='p-1 xs:p-16 lg:p-5 lg:flex'>
             <div className='lg:flex w-full text-base lg:text-sm rounded-lg shadow-2xl lg:mx-3 mb-9 lg:mb-0'
             data-aos="zoom-in-right"
@@ -42,8 +42,8 @@ const Services = () => {
             </div>
            
         </div>
-        <div className='p-1 xs:p-16 lg:p-5 lg:flex'>
-        <div className='lg:flex w-full text-base lg:text-smrounded-lg shadow-2xl lg:mx-3 mb-9 lg:mb-0'
+        <div className='p-1 xs:p-16 lg:p-5 lg:flex '>
+        <div className='lg:flex w-full text-base lg:text-sm rounded-lg shadow-2xl lg:mx-3 mb-9 lg:mb-0'
         data-aos="zoom-in-right"
         >
                 <Image 
