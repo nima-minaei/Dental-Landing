@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Head from "next/head";
 
 const Family = localFont({
-  src: "./fonts/Family/IRAN(FaNum).woff"
+  src: "./public/fonts/Family/IRAN(FaNum).woff"
 })
 
 export const metadata: Metadata = {
