@@ -53,6 +53,7 @@ export default function RootLayout({
 <Head>
         <title>دکتر سعید دریس دندانپزشکی مشهد</title>
         <meta name="description" content="وب سایت دکتر سعید دریس دندانپزشکی مشهد" />
+        <meta name="google-site-verification" content="aMayqU3H6AfwycrPyyof_SuvJz0wgSHW5RQGVAL2CbY" />
         
         {/* Adding JSON-LD schema */}
         <script

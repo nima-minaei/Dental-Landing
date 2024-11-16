@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 import pic from "@/app/src/p1.png"
+import { FaCircleCheck } from "react-icons/fa6";
 import { Stethoscope } from 'lucide-react';
 import { GraduationCap } from 'lucide-react'
 import { CircleCheck } from 'lucide-react';
@@ -24,15 +25,34 @@ const Resume = () => {
       <div>
             <div className="pt-10 px-3 md:p-10 ">
                 <div className="md:flex">
-                    <div className="md:w-[50%] mx-3 p-4 md:p-8 py-10 bg-[#3e96c6] rounded-xl text-gray-100 shadow-2xl" data-aos="flip-left">
-                        <div className='text-3xl sm:text-5xl lg:text-4xl xl:text-6xl font-extrabold mb-[26%]'>
-                            <h2>کلینیک دندانپزشکی دریس دنتال</h2>
-                        </div>
-                        <div className='text-slate-100 text-xs sm:text-base md:text-lg'>
-                            <p>دکتر سعید دریس فارغ التحصیل دانشگاه تهران با مدرک دکتری حرفه ای،ارائه دهنده به روزترین خدمات دندانپزشکی در مشهد می باشد.</p>
-                        </div>
+                <div className="md:w-[50%] mx-3 md:p-6 bg-[#3e96c6] rounded-xl text-gray-50 shadow-2xl" data-aos="flip-left">
+                    <div className=" p-5 mb-3 font-extrabold text-[1.3rem] lg:text-2xl 2xl:text-4xl">
+                      <h3>برترین خدمات را از کلینیک ما بخواهید</h3>
                     </div>
-                    <div className='md:w-[50%] mx-3 mt-10 md:mt-0 shadow-2xl rounded-xl text-gray-700 ' data-aos="flip-right">
+                    <div className="text-justify p-5 pb-12 text-sm lg:text-base 2xl:text-lg">
+                      <p>ما در کلینیک دریس دنتال همواره با ارائه خدمات به روز درکنار تعرفه ها و شرایط پرداخت مناسب، به دنبال کسب رضایت مراجعین عزیزمان هستیم</p> 
+                    </div>
+                    <div className=" space-y-4 text-xs lg:text-sm px-5 font-extrabold ">
+                      <div className="flex items-center">
+                        <FaCircleCheck/>
+                        <span className="px-2">جلسات مشاوره و معاینه رایگان</span>
+                      </div>
+                      <div className="flex items-center">
+                        <FaCircleCheck/>
+                        <span className="px-2">کادر مجرب و متخصص</span>
+                      </div>
+                      <div className="flex items-center">
+                        <FaCircleCheck/>
+                        <span className="px-2">مناسب ترین تعرفه های درمانی</span>
+                      </div>
+                      <div className="flex items-center pb-5">
+                        <FaCircleCheck/>
+                        <span className="px-2">امکان نوبت دهی حضوری و تلفنی</span>
+                      </div>
+                    </div>
+                </div>
+                            {/* <p>دکتر سعید دریس فارغ التحصیل دانشگاه تهران با مدرک دکتری حرفه ای،ارائه دهنده به روزترین خدمات دندانپزشکی در مشهد می باشد.</p> */}
+                    <div className='md:w-[50%] mx-3 mt-10 md:mt-0 shadow-2xl rounded-xl text-gray-700' data-aos="flip-right">
                             <div className='flex py-8 justify-around'>
                                 <div className=" md:w-[50%] pr-5 space-y-4 text-[0.65rem] sm:text-base lg:text-lg "> 
                                     <div className="flex justify-start items-center">
