@@ -84,7 +84,7 @@ const Footer = () => {
                         <div className='w-max-full '>
                             <div>
                                 <Link href={'https://maps.app.goo.gl/xFceYK9VSfAg3iTdA?g_st=ic'} target="_blank">
-                                    <Image className='rounded-xl object-cover hover:object-none hover:duration-500' src={map} alt='دکتر سعید دریس دندانپزشکی مشهد آدرس' />
+                                    <Image className='rounded-xl object-cover ' src={map} alt='دکتر سعید دریس دندانپزشکی مشهد آدرس' />
                                 </Link>
                                 <p className='flex justify-center pt-4 text-xs md:text-sm'>برای مسیر یابی روی عکس کلیک کنید</p>
                             </div>
@@ -95,7 +95,7 @@ const Footer = () => {
             </footer>
 
             <div className='flex flex-wrap text-[0.8rem] 2xl:text-base sm:justify-between justify-center py-2 sm:px-5 text-slate-700'>
-                <p>© کلیه حقوق متعلق به گروه ما می باشد.</p>
+                <p>© کلیه حقوق این وبسایت متعلق به دکتر سعید دریس می باشد.</p>
                 <div className='flex space-x-3 mt-5 py-1 sm:m-0'>
                     <FaPhone className='mx-2' />
                     <FaFacebookF />

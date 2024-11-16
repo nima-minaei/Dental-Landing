@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <>
         <div className='relative z-0 w-full' id='main-menu'>
-            <div className='absolute bottom-[20%] py-4 px-5 sm:p-6 rounded-e-3xl md:m-auto backdrop-blur-md bg-black/15 w-[45%] shadow-xl'>
+            <div className='absolute bottom-[30%] py-4 px-5 sm:p-6 rounded-e-3xl md:m-auto backdrop-blur-md bg-black/15 w-[45%] shadow-xl' data-aos="fade-down-left">
               <div className='relative place-self-center text-[0.5rem] sm:text-[0.75rem] md:text-lg lg:px-1 2xl:py-10 text-gray-100 '>
-                <h1 className='text-center mb-4 2xl:mb-8 font-extrabold text-[0.85rem] sm:text-2xl md:text-4xl '>کلینک دندانپزشکی دریس دنتال</h1>
+                <h1 className='text-center mb-4 2xl:mb-8 font-extrabold text-[0.85rem] sm:text-2xl md:text-4xl '>کلینیک دندانپزشکی دکتر سعید دریس </h1>
                 <p className='text-center'>زیبایی لبخند خود را از ما بخواهید</p>
               </div>
             </div>
@@ -26,7 +26,7 @@ const Header = () => {
                                 width: '100%',
                                 objectFit: "cover"
                                 }}>
-              <Image src={pic} alt='دکتر سعید دریس دندانپزشکی مشهد' width={2000} height={1000} className='object-cover h-[35dvh] sm:h-[48dvh] md:h-[70dvh] lg:h-[97dvh] object-left-top ' />
+              <Image src={pic} alt='دکتر سعید دریس دندانپزشکی مشهد' width={2500} height={1500} className='object-cover h-[35lvh] sm:h-[48lvh] md:h-[70lvh] lg:h-[97lvh] object-left-top ' />
               <figcaption></figcaption>
             </figure>
         </div>
