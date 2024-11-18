@@ -24,13 +24,13 @@ export default function NavBar(){
   const [open, setOpen] = useState<boolean>(false) 
     return (
     <>
-    <div className='sticky top-0 backdrop-blur-3xl bg-black/15 text-slate-900 rounded-b-lg w-full z-10'>
+    <div className='sticky top-0 backdrop-blur-3xl bg-black/15 text-slate-700 rounded-b-lg w-full z-10'>
       <div className='relative flex px-6 md:px-14 py-1'>
         <div className=' sm:hidden flex w-full items-center'>
           <Sheet open={open} onOpenChange={setOpen} data-aos="fade-left" data-aos-duration="3000">
             <SheetTrigger><Menu/></SheetTrigger>
-            <SheetContent className='w-full bg-[url(../app/src/pattern-randomized.svg)] text-slate-900'>
-              <SheetHeader className=' mini pt-16 space-y-6 font-bold text-zinc-900'>
+            <SheetContent className='w-full bg-[url(../app/src/pattern-randomized.svg)] text-slate-700'>
+              <SheetHeader className=' mini pt-16 space-y-6 font-bold text-slate-700'>
                 <SheetDescription onClick={() => {
                   setOpen(false)
                   }}>صفحه اصلی</SheetDescription>
