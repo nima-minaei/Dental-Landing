@@ -11,6 +11,9 @@ const Family = localFont({
 export const metadata: Metadata = {
   title: "دندان پزشکی دکتر سعید دریس",
   description: "کلینیک دندانپزشکی دکتر سعید دریس در مشهد - برای اطلاعات بیشتر وارد شوید.",
+  verification: {
+    google: 'aMayqU3H6AfwycrPyyof_SuvJz0wgSHW5RQGVAL2CbY',
+  },
 };
 
 export default function RootLayout({
@@ -48,12 +51,12 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
 
 <Head>
         <title>دکتر سعید دریس دندانپزشکی مشهد</title>
         <meta name="description" content="وب سایت دکتر سعید دریس دندانپزشکی مشهد" />
-        <meta name="google-site-verification" content="aMayqU3H6AfwycrPyyof_SuvJz0wgSHW5RQGVAL2CbY" />
+        <meta name="google-site-verification" content="" />
         <meta property="og:title" content="دکتر سعید دریس دندانپزشکی مشهد<" />
         <meta property="og:description" content="کلینیک دندانپزشکی دکتر سعید دریس در مشهد - برای اطلاعات بیشتر وارد شوید." />
         <meta property="og:image" content="./app/src/IMG_0751.jpg" />

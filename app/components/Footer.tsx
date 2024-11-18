@@ -42,8 +42,9 @@ const Footer = () => {
                             <span className='pr-3'>saeed.deris@gmail.com</span>
                         </div>
                         <div className='flex items-center'>
-                            <Link href={"https://www.instagram.com/dr.saeid.deris/profilecard/?igsh=MWlvcDQ2NHJseW9vbg=="} target="_blank">
-                                <IoLogoInstagram size={36}/>
+                            <Link className='flex items-center' href={"https://www.instagram.com/dr.saeid.deris/profilecard/?igsh=MWlvcDQ2NHJseW9vbg=="} target="_blank">
+                                <IoLogoInstagram size={26}/>
+                                <span className='pr-3'>dr.saeid.deris</span>
                             </Link>
                         </div>
 
@@ -96,13 +97,13 @@ const Footer = () => {
 
             <div className='flex flex-wrap text-[0.8rem] 2xl:text-base sm:justify-between justify-center py-2 sm:px-5 text-slate-700'>
                 <p>© کلیه حقوق این وبسایت متعلق به دکتر سعید دریس می باشد.</p>
-                <div className='flex space-x-3 mt-5 py-1 sm:m-0'>
+                {/* <div className='flex space-x-3 mt-5 py-1 sm:m-0'>
                     <FaPhone className='mx-2' />
                     <FaFacebookF />
                     <FaXTwitter />
                     <FaWhatsapp />
                     <IoLogoInstagram />
-                </div>
+                </div> */}
             </div>
     </>
   )
