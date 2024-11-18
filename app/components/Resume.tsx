@@ -25,8 +25,7 @@ const Resume = () => {
       <div>
             <div className="pt-10 px-3 md:p-10 ">
                 <div className="md:flex">
-                <div className="md:w-[50%] mx-3 md:p-6 bg-[#3e96c6] rounded-xl text-gray-50 shadow-2xl" data-aos="flip-left">
-                  <div className='content-center'>
+                <div className="md:w-[50%] place-self-center mx-3 md:p-6 bg-[#3e96c6] rounded-xl text-gray-50 shadow-2xl" data-aos="flip-left">
                     <div className=" p-4 mb-3 font-extrabold text-[1.3rem] lg:text-2xl 2xl:text-4xl">
                       <h3>برترین خدمات را از کلینیک ما بخواهید</h3>
                     </div>
@@ -51,7 +50,6 @@ const Resume = () => {
                         <span className="px-2">امکان نوبت دهی حضوری و تلفنی</span>
                       </div>
                     </div>
-                  </div>
                 </div>
                             {/* <p>دکتر سعید دریس فارغ التحصیل دانشگاه تهران با مدرک دکتری حرفه ای،ارائه دهنده به روزترین خدمات دندانپزشکی در مشهد می باشد.</p> */}
                     <div className='md:w-[50%] mx-3 mt-10 md:mt-0 shadow-2xl rounded-xl text-gray-700' data-aos="flip-right">
@@ -59,7 +57,7 @@ const Resume = () => {
                                 <div className=" md:w-[50%] pr-5 space-y-4 text-[0.65rem] sm:text-base lg:text-lg "> 
                                     <div className="flex justify-start items-center">
                                         <Stethoscope color='#3e96c6' size={18} />
-                                        <span className="px-2">23 سال تجربه و تخصص</span>
+                                        <span className="px-2">26 سال تجربه و تخصص</span>
                                     </div>
                                     <div className="flex justify-start items-center">
                                         <GraduationCap color='#3e96c6' size={18}/>

@@ -34,12 +34,14 @@ const Footer = () => {
                         <span className='pr-3'>مشهد - خیابان فلسطین 19 - پلاک 76 - طبفه دوم</span>
                         </div>
                         <div className='flex items-center'>
+                        <Link className='flex items-center' href={"tel:+985138437235"} target="_blank">
                             <Phone />
-                            <span className='pr-3 oldstyle-nums'>05138437235 - 09155140975</span>
+                                <span className='pr-3 oldstyle-nums'>05138437235 - 09155140975</span>
+                            </Link>
                         </div>
                         <div className='flex items-center'>
                             <Mail />
-                            <span className='pr-3'>saeed.deris@gmail.com</span>
+                            <span className='pr-3'>dr.saeidderis@gmail.com</span>
                         </div>
                         <div className='flex items-center'>
                             <Link className='flex items-center' href={"https://www.instagram.com/dr.saeid.deris/profilecard/?igsh=MWlvcDQ2NHJseW9vbg=="} target="_blank">
@@ -84,7 +86,7 @@ const Footer = () => {
                         </div>
                         <div className='w-max-full '>
                             <div>
-                                <Link href={'https://maps.app.goo.gl/xFceYK9VSfAg3iTdA?g_st=ic'} target="_blank">
+                                <Link href={'https://nshn.ir/91_b1J920JGQf8'} target="_blank">
                                     <Image className='rounded-xl object-cover ' src={map} alt='دکتر سعید دریس دندانپزشکی مشهد آدرس' />
                                 </Link>
                                 <p className='flex justify-center pt-4 text-xs md:text-sm'>برای مسیر یابی روی عکس کلیک کنید</p>

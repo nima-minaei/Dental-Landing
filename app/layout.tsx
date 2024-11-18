@@ -60,6 +60,8 @@ export default function RootLayout({
         <meta property="og:title" content="دکتر سعید دریس دندانپزشکی مشهد<" />
         <meta property="og:description" content="کلینیک دندانپزشکی دکتر سعید دریس در مشهد - برای اطلاعات بیشتر وارد شوید." />
         <meta property="og:image" content="./app/src/IMG_0751.jpg" />
+        <meta property="twitter:image" content="./app/src/IMG_0751.jpg" />
+
         
         {/* Adding JSON-LD schema */}
         <script
