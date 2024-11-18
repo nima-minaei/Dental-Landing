@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { IoLogoInstagram } from "react-icons/io5";
-import { FaFacebookF, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
-import { FaPhone } from 'react-icons/fa';
+// import { FaFacebookF, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+// import { FaPhone } from 'react-icons/fa';
 import { Phone } from 'lucide-react'
 import { Mail } from 'lucide-react';
 import Link from 'next/link';
